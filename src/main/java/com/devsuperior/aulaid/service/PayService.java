@@ -1,21 +1,24 @@
 package com.devsuperior.aulaid.service;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 
 
 @Component
 public class PayService {
+	@Autowired
 	public TaxService taxServices;
+	@Autowired
 	public DeliverService deliverServices;	
 	
 	
 	//Construtor
 	
-	public PayService(DeliverService deliverServices, TaxService taxServices) {
+	/*public PayService(DeliverService deliverServices, TaxService taxServices) {
 		this.taxServices = taxServices;
 		this.deliverServices = deliverServices;
-	}
+	}*/
 
 
 
